@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anomaly Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Anomaly Detector</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="text" name="text" placeholder="Enter text" required>
+        <select name="label">
+            <option value="unknown">Unknown</option>
+            <option value="good">Good</option>
+            <option value="bad">Bad</option>
+        </select>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
